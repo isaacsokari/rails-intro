@@ -41,6 +41,10 @@
     <%= form.text_field :age, placeholder:"Age", class:"form-control" %>
   </div>
 
+  <div class="field">
+    <%= form.number_field :user_id, id: :friend_user_id, value: current_user.id, class:"form-control", type: :hidden %>
+  </div>
+
   <div class="actions">
     <%= form.submit class:"btn btn-success my-3" %>
   </div>
